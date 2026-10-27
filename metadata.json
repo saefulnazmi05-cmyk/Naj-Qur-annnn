@@ -1,0 +1,6 @@
+{
+  "name": "Naj Qur’an",
+  "description": "Naj Qur’an — Digital Al-Qur’an Platform. Dekat dengan Al-Qur’an, Setiap Hari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

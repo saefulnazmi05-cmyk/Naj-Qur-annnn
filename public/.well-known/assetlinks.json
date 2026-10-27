@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.najquran.app",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:7D:0F:52:AB:78:E1:92:44:81:49:1A:E5:8B:2A:43:40:99:6F:A2:AA:7A:B4:73:C8:3F:8A:2F:3A:C7"
+      ]
+    }
+  }
+]

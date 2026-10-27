@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.najquran.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.najquran.app"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Default Host & Scheme configuration for TWA
+        manifestPlaceholders = [
+            hostName: "ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app",
+            defaultUrl: "https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app",
+            appName: "Naj Qur’an",
+            launcherName: "Naj Quran",
+            themeColor: "#003B2E",
+            navigationColor: "#003B2E",
+            backgroundColor: "#FFFEFA"
+        ]
+    }
+
+    signingConfigs {
+        release {
+            // Secure signing configuration: credentials are read from environment variables or gradle.properties
+            storeFile file(System.getenv("KEYSTORE_PATH") ?: "release-keystore.jks")
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: ""
+            keyAlias System.getenv("KEY_ALIAS") ?: "najquran"
+            keyPassword System.getenv("KEY_PASSWORD") ?: ""
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Use release signing if configured, otherwise falls back to debug signing for testing
+            if (System.getenv("KEYSTORE_PASSWORD")) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Google Android Browser Helper for Trusted Web Activity (TWA)
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+}

@@ -1,0 +1,63 @@
+{
+  "packageId": "com.najquran.app",
+  "host": "ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app",
+  "name": "Naj Qur’an",
+  "launcherName": "Naj Quran",
+  "themeColor": "#003B2E",
+  "navigationColor": "#003B2E",
+  "backgroundColor": "#FFFEFA",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app/pwa-512x512.png",
+  "maskableIconUrl": "https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app/pwa-maskable-512x512.png",
+  "appVersionName": "1.1.0",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "Al-Qur’an 114 Surat",
+      "short_name": "Al-Qur’an",
+      "url": "/?view=surahs",
+      "chosenIcon": "pwa-192x192.png"
+    },
+    {
+      "name": "Jadwal Salat Lima Waktu",
+      "short_name": "Jadwal Salat",
+      "url": "/?view=prayer-times",
+      "chosenIcon": "pwa-192x192.png"
+    },
+    {
+      "name": "Arah Kiblat",
+      "short_name": "Kiblat",
+      "url": "/?view=qibla",
+      "chosenIcon": "pwa-192x192.png"
+    },
+    {
+      "name": "Doa Harian",
+      "short_name": "Doa",
+      "url": "/?view=duas",
+      "chosenIcon": "pwa-192x192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": true
+    },
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "orientation": "portrait-primary",
+  "fingerprints": [
+    {
+      "value": "14:6D:E9:7D:0F:52:AB:78:E1:92:44:81:49:1A:E5:8B:2A:43:40:99:6F:A2:AA:7A:B4:73:C8:3F:8A:2F:3A:C7"
+    }
+  ]
+}

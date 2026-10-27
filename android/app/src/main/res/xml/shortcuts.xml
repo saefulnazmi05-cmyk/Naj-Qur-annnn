@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="shortcut_quran"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_quran_short"
+        android:shortcutLongLabel="@string/shortcut_quran_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.najquran.app"
+            android:targetClass="com.google.androidbrowserhelper.trusted.LauncherActivity"
+            android:data="https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app/?view=surahs" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut_salat"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_salat_short"
+        android:shortcutLongLabel="@string/shortcut_salat_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.najquran.app"
+            android:targetClass="com.google.androidbrowserhelper.trusted.LauncherActivity"
+            android:data="https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app/?view=prayer-times" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut_qibla"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_qibla_short"
+        android:shortcutLongLabel="@string/shortcut_qibla_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.najquran.app"
+            android:targetClass="com.google.androidbrowserhelper.trusted.LauncherActivity"
+            android:data="https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app/?view=qibla" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Naj Qur'an Official Color Tokens -->
+    <color name="colorPrimary">#003B2E</color>
+    <color name="colorPrimaryDark">#002B21</color>
+    <color name="colorAccent">#E0B030</color>
+    <color name="colorIvory">#F5F0D5</color>
+    <color name="colorBackground">#FFFEFA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorText">#202520</color>
+</resources>

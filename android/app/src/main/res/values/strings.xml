@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Naj Qur’an</string>
+    <string name="launcher_name">Naj Quran</string>
+    
+    <string name="shortcut_quran_short">Al-Qur’an</string>
+    <string name="shortcut_quran_long">Buka 114 Surat Al-Qur’an</string>
+    <string name="shortcut_salat_short">Jadwal Salat</string>
+    <string name="shortcut_salat_long">Jadwal Salat &amp; Hitung Mundur</string>
+    <string name="shortcut_qibla_short">Arah Kiblat</string>
+    <string name="shortcut_qibla_long">Kompas Arah Kiblat Ka’bah</string>
+    
+    <!-- Digital Asset Links declaration -->
+    <string name="asset_statements">
+        [{\\\"relation\\\": [\\\"delegate_permission/common.handle_all_urls\\\"],
+          \\\"target\\\": {\\\"namespace\\\": \\\"web\\\", \\\"site\\\": \\\"https://ais-dev-avl2giwvhgo7kwrbcju2dq-756539056236.asia-northeast1.run.app\\\"}}]
+    </string>
+</resources>
